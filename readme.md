@@ -1,13 +1,11 @@
-# Portfolio — Camila Sotelo (plantilla)
+# Jarvis Zuniga — Portafolio Web
 
-Portfolio personal de una sola página, con animaciones y todo funcional.
-Dirección de diseño: **editorial kinético / sobreimpresión risográfica**.
+Portfolio personal de una sola página — Diseñador Gráfico & Productor Audiovisual.
 
-## Cómo verlo
+## Cómo verlo localmente
 
-La forma más simple: **doble clic en `index.html`** (se abre en el navegador).
-No necesita servidor ni instalar nada; las fuentes se cargan desde Google Fonts,
-así que conviene tener internet la primera vez.
+Doble clic en `index.html` (se abre en el navegador).  
+No necesita servidor ni instalar nada; las fuentes se cargan desde Google Fonts.
 
 ## Archivos
 
@@ -16,33 +14,25 @@ así que conviene tener internet la primera vez.
 | `index.html` | Estructura y contenido |
 | `styles.css` | Estilos, tokens de color/tipografía y animaciones |
 | `script.js`  | Interacciones (menú, filtro, formulario, animaciones de scroll) |
+| `assets/` | Imágenes, videos, logos y CV |
 
 ## Qué incluye
 
-- **Hero** con el nombre en sobreimpresión de dos tintas (coral + azul) que se
-  "registran" al cargar y se mueven con el mouse.
-- **Marquee** de servicios en bucle.
-- **Sobre mí**, con datos destacados.
-- **Trabajo** con grilla de proyectos y **filtro funcional** (Todo / Producto / Motion / Marca).
-- **Servicios**, **Proceso** (3 pasos) y **Contacto** con formulario validado.
-- Animaciones al hacer scroll, nav que resalta la sección activa, barra de progreso,
-  cursor personalizado y menú móvil.
-- Accesible: foco visible, navegable por teclado y respeta `prefers-reduced-motion`.
+- **Hero** con foto y datos de disponibilidad.
+- **Cintillo animado** con logos de clientes.
+- **Trabajo** con grilla de proyectos, miniaturas reales y filtro funcional.
+- **Servicios** con CTA directo al formulario de contacto.
+- **Proceso** en 3 pasos.
+- **Contacto** con formulario conectado a Formspree.
+- Animaciones al hacer scroll, nav que resalta la sección activa y menú móvil.
 
-## Cómo hacerlo tuyo
+## Tecnologías
 
-1. **Nombre:** buscá y reemplazá `Camila Sotelo` en `index.html` (hero, nav, footer)
-   y las iniciales `CS` del logo.
-2. **Email:** reemplazá `hola@camilasotelo.com` en `index.html` y en `script.js`
-   (la función del formulario arma un `mailto:` a esa dirección).
-3. **Proyectos:** editá las tarjetas `<article class="card" ...>` en la sección
-   `#trabajo`. El atributo `data-cat` define en qué filtro aparece
-   (`producto`, `motion`, `marca`; podés poner varios separados por espacio).
-4. **Colores:** cambiá los tokens al inicio de `styles.css` (`:root { --coral: ...; }`).
-5. **Textos:** todo el copy está en `index.html`, listo para ajustar.
+- HTML5 / CSS3 / JavaScript vanilla
+- Formspree para el formulario de contacto
+- Fuentes: Bricolage Grotesque, Space Mono, Spline Sans (Google Fonts)
 
-## Nota sobre el formulario
+## Contacto
 
-No tiene backend: valida los campos y abre el cliente de correo con el mensaje
-pre-armado. Si querés que envíe de verdad sin abrir el correo, se puede conectar
-a un servicio como Formspree o a una función serverless.
+jarviszuniga84@gmail.com  
+[jarviszuniga-design.netlify.app](https://jarviszuniga-design.netlify.app)

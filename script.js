@@ -1,5 +1,5 @@
 /* =========================================================
-   Camila Sotelo — Portfolio · interacciones
+   Jarvis Zuniga — Portfolio · interacciones
    ========================================================= */
 (() => {
   "use strict";
