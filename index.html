@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jarvis Zuniga — Diseño de producto & motion</title>
+  <meta name="description" content="Portfolio de Jarvis Zuniga: diseño de producto digital y motion para equipos que quieren destacar." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://jarviszuniga-design.netlify.app/" />
+  <meta property="og:title"       content="Jarvis Zuniga — Diseñador Gráfico &amp; Productor Audiovisual" />
+  <meta property="og:description" content="Más de 10 años creando piezas visuales de alto impacto para redes, branding y producción audiovisual — potenciadas con IA." />
+  <meta property="og:image"       content="https://jarviszuniga-design.netlify.app/assets/jarvis.jpg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Jarvis Zuniga — Diseñador Gráfico &amp; Productor Audiovisual" />
+  <meta name="twitter:description" content="Más de 10 años creando piezas visuales de alto impacto para redes, branding y producción audiovisual — potenciadas con IA." />
+  <meta name="twitter:image"       content="https://jarviszuniga-design.netlify.app/assets/jarvis.jpg" />
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Texturas globales -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-bar" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="nav" id="top">
+    <a href="#top" class="nav__brand" aria-label="Inicio">
+      <span class="nav__mark">JZ</span>
+      <span class="nav__name">Jarvis&nbsp;Zuniga</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#trabajo" data-link>Trabajo</a>
+      <a href="#sobre" data-link>Sobre mí</a>
+      <a href="#servicios" data-link>Servicios</a>
+      <a href="#proceso" data-link>Proceso</a>
+      <a href="assets/CV-Jarvis-Zuniga-2026.pdf" class="nav__cv" download aria-label="Descargar currículum (PDF)">Currículum <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+      <a href="#contacto" class="nav__cta" data-link>Hablemos</a>
+    </nav>
+
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Menú móvil -->
+  <div class="menu" id="menu" hidden>
+    <a href="#trabajo" data-link>Trabajo</a>
+    <a href="#sobre" data-link>Sobre mí</a>
+    <a href="#servicios" data-link>Servicios</a>
+    <a href="#proceso" data-link>Proceso</a>
+    <a href="assets/CV-Jarvis-Zuniga-2026.pdf" class="nav__cv" download aria-label="Descargar currículum (PDF)">Currículum <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+    <a href="#contacto" data-link>Hablemos</a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__halftone" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">
+          <span class="dot"></span>Diseñador Gráfico · Productor Audiovisual
+        </p>
+
+        <h1 class="hero__title" data-overprint>
+          <span class="line">
+            <span class="ink ink--base">Jarvis</span>
+            <span class="ink ink--coral" aria-hidden="true">Jarvis</span>
+            <span class="ink ink--blue" aria-hidden="true">Jarvis</span>
+          </span>
+          <span class="line line--indent">
+            <span class="ink ink--base">Zuniga</span>
+            <span class="ink ink--coral" aria-hidden="true">Zuniga</span>
+            <span class="ink ink--blue" aria-hidden="true">Zuniga</span>
+          </span>
+        </h1>
+
+        <p class="hero__lede">
+          Más de 10 años creando piezas visuales de alto impacto para redes,
+          branding y producción audiovisual —ahora potenciadas con IA aplicada
+          al diseño y al video.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#trabajo" class="btn btn--solid" data-link>Ver trabajo</a>
+          <a href="#contacto" class="btn btn--ghost" data-link>Hablemos →</a>
+        </div>
+
+        <ul class="hero__meta">
+          <li><span>Base</span>San Pedro Sula, Honduras</li>
+          <li><span>Estado</span>Disponible para proyectos</li>
+          <li><span>Foco</span>Diseño + Web + Audiovisual + IA</li>
+        </ul>
+        </div><!-- /.hero__content -->
+
+        <div class="hero__media">
+          <span class="hero__blob" aria-hidden="true"></span>
+          <span class="hero__halo" aria-hidden="true"></span>
+          <img class="hero__cutout" src="assets/jarvis-cutout.png" alt="Jarvis Zuniga, diseñador gráfico y productor audiovisual" />
+          <span class="hero__badge">Diseño · Video · IA</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span>Marcas que han confiado en mí</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE LOGOS ============ -->
+    <div class="marquee-wrap">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track marquee__track--logos">
+        <img src="assets/logo-bosques.png"     alt="Bosques de Alejandría" />
+        <img src="assets/logo-torres.png"      alt="Torres Platino" />
+        <img src="assets/logo-duracreto.png"   alt="Duracreto" />
+        <img src="assets/logo-mirador.png"     alt="Mirador de los Hidalgos" />
+        <img src="assets/logo-santa-elena.png" alt="Santa Elena" />
+        <img src="assets/logo-platino.svg"     alt="Inmobiliaria Platino" />
+        <img src="assets/logo-exa.png"         alt="Ponte EXA" />
+        <img src="assets/logo-power.png"       alt="Power" />
+        <img src="assets/logo-mtk.png"         alt="MTK Tierra Fría" />
+        <img src="assets/logo-bosques.png"     alt="" />
+        <img src="assets/logo-torres.png"      alt="" />
+        <img src="assets/logo-duracreto.png"   alt="" />
+        <img src="assets/logo-mirador.png"     alt="" />
+        <img src="assets/logo-santa-elena.png" alt="" />
+        <img src="assets/logo-platino.svg"     alt="" />
+        <img src="assets/logo-exa.png"         alt="" />
+        <img src="assets/logo-power.png"       alt="" />
+        <img src="assets/logo-mtk.png"         alt="" />
+        <img src="assets/logo-bosques.png"     alt="" />
+        <img src="assets/logo-torres.png"      alt="" />
+        <img src="assets/logo-duracreto.png"   alt="" />
+        <img src="assets/logo-mirador.png"     alt="" />
+        <img src="assets/logo-santa-elena.png" alt="" />
+        <img src="assets/logo-platino.svg"     alt="" />
+        <img src="assets/logo-exa.png"         alt="" />
+        <img src="assets/logo-power.png"       alt="" />
+        <img src="assets/logo-mtk.png"         alt="" />
+      </div>
+    </div>
+    </div><!-- /.marquee-wrap -->
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="about" id="sobre">
+      <div class="about__grid">
+        <div class="about__media reveal">
+          <figure class="about__photo">
+            <img src="assets/jarvis-about.jpg" alt="Jarvis Zuniga con campera y gorra sobre fondo coral" />
+            <span class="about__photo-tag">San Pedro Sula, HN</span>
+          </figure>
+        </div>
+        <div class="about__col about__col--wide">
+          <p class="eyebrow reveal">(01) Sobre mí</p>
+          <p class="about__lead reveal">
+            Apasionado por el diseño y la creatividad, con más de 10 años
+            creando piezas visuales de alto impacto.
+          </p>
+          <p class="about__body reveal">
+            Domino el ecosistema Adobe —Illustrator, Photoshop, InDesign y
+            Premiere Pro— junto con DaVinci Resolve y CapCut, y los potencio
+            con IA aplicada al diseño y al video —Midjourney, Adobe Firefly,
+            Runway, Flow, Higgsfield, Nano Banana, ChatGPT y Claude— para
+            acelerar conceptos y elevar el resultado final. También diseño y
+            creo páginas web a medida que le dan hogar a tu marca y a tu
+            contenido. Participo en todas las etapas: preproducción, producción
+            y postproducción, optimizando el contenido para maximizar el
+            engagement y el impacto.
+          </p>
+          <ul class="about__facts">
+            <li class="reveal"><b>+10</b><span>años de experiencia</span></li>
+            <li class="reveal"><b>+100</b><span>clientes</span></li>
+            <li class="reveal"><b>+50</b><span>marcas</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRABAJO ============ -->
+    <section class="work" id="trabajo">
+      <div class="work__head">
+        <div>
+          <p class="eyebrow eyebrow--light reveal">(02) Trabajo seleccionado</p>
+          <h2 class="section-title reveal">Diseño, video y marcas<br>que de verdad funcionan.</h2>
+        </div>
+        <div class="filters reveal" role="tablist" aria-label="Filtrar proyectos">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">Todo</button>
+          <button class="filter" data-filter="redes" role="tab" aria-selected="false">Redes</button>
+          <button class="filter" data-filter="video" role="tab" aria-selected="false">Video</button>
+          <button class="filter" data-filter="foto" role="tab" aria-selected="false">Foto</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card card--link card--social reveal" data-cat="redes" style="--c:var(--coral)">
+          <a class="card__cover-link" href="artes-redes.html" aria-label="Ver proyecto: Artes para redes sociales"></a>
+          <div class="card__media">
+            <img class="card__thumb" src="assets/bosques-1.jpg" alt="" aria-hidden="true" />
+            <span class="card__index">01</span>
+            <span class="card__pill">Redes sociales</span>
+            <div class="feedgrid" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+              <span></span><span></span><span></span>
+            </div>
+            <span class="card__heart" aria-hidden="true">♥</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-text="Feed">Feed</h3>
+            <p class="card__meta">Artes para redes sociales · 2025</p>
+            <p class="card__desc">Set de piezas para redes: feed, stories, carruseles y anuncios pensados para parar el scroll.</p>
+            <p class="card__result">↑ +180 % de engagement en Bosques de Alejandría en 60 días</p>
+            <ul class="tags"><li>Redes</li><li>Social</li><li>Anuncios</li></ul>
+            <span class="card__cta">Ver proyecto →</span>
+          </div>
+        </article>
+
+        <article class="card card--link reveal" data-cat="video" style="--c:var(--coral)">
+          <a class="card__cover-link" href="reels.html" aria-label="Ver reels"></a>
+          <div class="card__media">
+            <img class="card__thumb" src="assets/reels-tp.jpg" alt="" aria-hidden="true" />
+            <span class="card__index">02</span>
+            <span class="card__pill">Video</span>
+            <span class="card__glyph"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-text="Reels">Reels</h3>
+            <p class="card__meta">Video vertical · Reels</p>
+            <p class="card__desc">Reels en video para Bosques de Alejandría, Torres Platino e Inmobiliaria Platino, pensados para redes.</p>
+            <p class="card__result">↑ Alcance orgánico de Torres Platino x2 en 3 semanas</p>
+            <ul class="tags"><li>Reel</li><li>Vertical</li><li>Motion</li></ul>
+            <span class="card__cta">Ver reels →</span>
+          </div>
+        </article>
+
+        <article class="card card--link reveal" data-cat="video" style="--c:var(--yellow)" data-album='[{"src":"assets/anim-1.mp4","type":"video","cap":"Animación — Duracreto"},{"src":"assets/anim-2.mp4","type":"video","cap":"Animación — Torres Platino"},{"src":"assets/anim-3.mp4","type":"video","cap":"Animación — Bosques de Alejandría"},{"src":"assets/anim-4.mp4","type":"video","cap":"Animación — Mirador de los Hidalgos"},{"src":"assets/anim-5.mp4","type":"video","cap":"Animación — Santa Elena"}]'>
+          <button class="card__cover-link" type="button" aria-label="Ver animaciones"></button>
+          <div class="card__media">
+            <img class="card__thumb" src="assets/mirador-1.jpg" alt="" aria-hidden="true" />
+            <span class="card__index">03</span>
+            <span class="card__pill">Animación</span>
+            <span class="card__glyph"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-text="Animación">Animación</h3>
+            <p class="card__meta">Motion · Animación</p>
+            <p class="card__desc">Animaciones de marca y proyecto en movimiento: Duracreto, Torres Platino, Bosques, Mirador y Santa Elena.</p>
+            <p class="card__result">↑ Lanzamiento de Mirador vendió 12 unidades en la primera semana</p>
+            <ul class="tags"><li>Motion</li><li>2D / 3D</li><li>Marca</li></ul>
+            <span class="card__cta">Ver animación →</span>
+          </div>
+        </article>
+
+        <article class="card card--link reveal" data-cat="foto" style="--c:var(--blue)" data-album='[{"src":"assets/foto-1.jpg","cap":"Retrato — luz y sombra"},{"src":"assets/foto-2.jpg","cap":"Retrato editorial"},{"src":"assets/foto-3.jpg","cap":"Retrato en movimiento"},{"src":"assets/foto-4.jpg","cap":"Retrato low-key"},{"src":"assets/foto-5.jpg","cap":"Headshot corporativo"},{"src":"assets/foto-6.jpg","cap":"Baloncesto — Huskies UNITEC"},{"src":"assets/foto-7.jpg","cap":"Baloncesto — humo y luz"},{"src":"assets/foto-8.jpg","cap":"Baloncesto — estudio"},{"src":"assets/foto-9.jpg","cap":"Retrato — rojo y azul"},{"src":"assets/foto-10.jpg","cap":"Retrato — luz dramática"}]'>
+          <button class="card__cover-link" type="button" aria-label="Ver fotografía"></button>
+          <div class="card__media">
+            <img class="card__thumb" src="assets/foto-2.jpg" alt="" aria-hidden="true" />
+            <span class="card__index">04</span>
+            <span class="card__pill">Fotografía</span>
+            <span class="card__glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 7h3l2-2.5h6L17 7h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></svg></span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title" data-text="Fotografía">Fotografía</h3>
+            <p class="card__meta">Retrato · Editorial</p>
+            <p class="card__desc">Retratos de estudio con luz dramática, headshots corporativos y fotografía editorial.</p>
+            <p class="card__result">↑ Sesión de headshots que triplicó las solicitudes de contacto del cliente</p>
+            <ul class="tags"><li>Retrato</li><li>Estudio</li><li>Editorial</li></ul>
+            <span class="card__cta">Ver fotos →</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="work__empty" hidden>No hay proyectos en esta categoría todavía.</p>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios">
+      <p class="eyebrow reveal">(03) En qué puedo ayudarte</p>
+      <div class="services__list">
+        <div class="service reveal">
+          <h3>Artes para redes</h3>
+          <p>Diseño de piezas y parrillas de contenido que comunican claro y paran el scroll.</p>
+          <span class="service__tag">Redes</span>
+        </div>
+        <div class="service reveal">
+          <h3>Producción de videos</h3>
+          <p>Del concepto al corte final: spots, reels y contenido audiovisual con ritmo e intención.</p>
+          <span class="service__tag">Video</span>
+        </div>
+        <div class="service reveal">
+          <h3>Branding &amp; identidad</h3>
+          <p>Logos y sistemas visuales que le dan personalidad y coherencia a tu marca.</p>
+          <span class="service__tag">Marca</span>
+        </div>
+        <div class="service reveal">
+          <h3>Páginas web</h3>
+          <p>Sitios a medida que combinan diseño, marca y contenido —rápidos y a tu imagen.</p>
+          <span class="service__tag">Web</span>
+        </div>
+      </div>
+      <div class="services__cta reveal">
+        <p class="services__cta-text">¿Tu marca merece verse como lo que vale?<br><strong>Hablemos hoy y lo hacemos realidad.</strong></p>
+        <a href="#contacto" class="btn btn--primary" data-link>Quiero empezar →</a>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="process" id="proceso">
+      <div class="process__head">
+        <p class="eyebrow eyebrow--light reveal">(04) Cómo trabajo</p>
+        <h2 class="section-title reveal">Tres pasos,<br>cero sorpresas.</h2>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step__num">01</span>
+          <h3>Descubrir</h3>
+          <p>Entiendo tu marca, tu objetivo y a quién le hablás. Sin eso, todo lo demás es decoración.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">02</span>
+          <h3>Crear</h3>
+          <p>Diseño, grabo y edito. Iteramos rápido y en voz alta: ves cómo avanza, no solo el resultado final.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step__num">03</span>
+          <h3>Entregar</h3>
+          <p>Archivos listos para publicar, optimizados para cada plataforma y formato.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p class="eyebrow reveal">(05) Hablemos</p>
+          <h2 class="contact__title reveal">¿Tenés algo<br>en mente?</h2>
+          <p class="contact__text reveal">
+            Contame qué estás construyendo. Respondo todos los mensajes,
+            normalmente dentro de las 48&nbsp;horas.
+          </p>
+          <div class="contact__links">
+            <a class="contact__mail reveal" href="mailto:jarviszuniga84@gmail.com">jarviszuniga84@gmail.com</a>
+            <a class="contact__wa reveal" href="https://wa.me/50499049114" target="_blank" rel="noopener">
+              <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M16.04 4C9.96 4 5.02 8.93 5.02 15c0 2.4.78 4.63 2.1 6.45L5.5 28l6.74-1.76A11 11 0 0 0 16.04 26C22.12 26 27.06 21.07 27.06 15S22.12 4 16.04 4zm0 2c4.98 0 9.02 4.03 9.02 9s-4.04 9-9.02 9c-1.32 0-2.6-.29-3.78-.85l-.4-.19-3.9 1.02 1.04-3.8-.25-.4A8.93 8.93 0 0 1 7.02 15c0-4.97 4.04-9 9.02-9zm-3.46 4.3c-.16 0-.43.06-.66.31-.22.25-.86.84-.86 2.05s.88 2.38 1 2.55c.13.16 1.74 2.78 4.32 3.79 2.14.84 2.58.68 3.05.63.46-.04 1.5-.61 1.71-1.2.21-.59.21-1.1.15-1.2-.06-.11-.22-.17-.47-.29-.25-.12-1.5-.74-1.73-.82-.23-.09-.4-.13-.57.12-.16.25-.65.82-.8.98-.14.17-.29.19-.54.07-.25-.13-1.07-.4-2.04-1.26-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.55-1.37-.77-1.87-.2-.48-.4-.42-.55-.42z"/>
+              </svg>
+              +504 9904-9114
+            </a>
+          </div>
+        </div>
+
+        <form class="form reveal" novalidate>
+          <div class="field">
+            <label for="name">Nombre</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Cómo te llamás" />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="tu@email.com" />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Contame sobre tu proyecto"></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button type="submit" class="btn btn--solid btn--block">Enviar mensaje</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#top" class="footer__big" data-link>Volver arriba ↑</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Jarvis Zuniga · Hecho con cuidado.</p>
+      <ul class="footer__social">
+        <li><a href="https://www.instagram.com/jarviszuniga/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/jarvis-zuniga" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:jarviszuniga84@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="https://wa.me/50499049114" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería de imágenes">
+    <button class="lightbox__close" aria-label="Cerrar galería">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Imagen anterior">‹</button>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+      <video class="lightbox__video" controls playsinline hidden></video>
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Imagen siguiente">›</button>
+    <span class="lightbox__counter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

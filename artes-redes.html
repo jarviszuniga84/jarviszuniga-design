@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artes para redes sociales — Jarvis Zuniga</title>
+  <meta name="description" content="Proyecto de artes para redes sociales: feed, stories, carruseles y anuncios diseñados por Jarvis Zuniga." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="scroll-bar" aria-hidden="true"></div>
+
+  <!-- Navegación -->
+  <header class="nav" id="top">
+    <a href="index.html" class="nav__brand" aria-label="Inicio">
+      <span class="nav__mark">JZ</span>
+      <span class="nav__name">Jarvis&nbsp;Zuniga</span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="index.html#trabajo" data-link>Trabajo</a>
+      <a href="index.html#sobre" data-link>Sobre mí</a>
+      <a href="index.html#servicios" data-link>Servicios</a>
+      <a href="assets/CV-Jarvis-Zuniga-2026.pdf" class="nav__cv" download aria-label="Descargar currículum (PDF)">Currículum <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+      <a href="index.html#contacto" class="nav__cta" data-link>Hablemos</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <a href="index.html#trabajo" data-link>Trabajo</a>
+    <a href="index.html#sobre" data-link>Sobre mí</a>
+    <a href="index.html#servicios" data-link>Servicios</a>
+    <a href="assets/CV-Jarvis-Zuniga-2026.pdf" class="nav__cv" download aria-label="Descargar currículum (PDF)">Currículum <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+    <a href="index.html#contacto" data-link>Hablemos</a>
+  </div>
+
+  <main>
+    <!-- Cabecera del proyecto -->
+    <section class="subhero">
+      <div class="subhero__halftone" aria-hidden="true"></div>
+      <div class="subhero__inner">
+        <a href="index.html#trabajo" class="subhero__back" data-link>← Volver al trabajo</a>
+        <p class="eyebrow"><span class="dot"></span>Proyecto · Redes sociales</p>
+        <h1 class="subhero__title">Artes para<br>redes sociales</h1>
+        <p class="subhero__lede">
+          Piezas pensadas para parar el scroll: feed, stories, carruseles y
+          anuncios con una identidad coherente que comunica claro y vende.
+        </p>
+        <ul class="subhero__meta">
+          <li><span>Servicio</span>Diseño para redes</li>
+          <li><span>Formatos</span>Feed · Stories · Reels</li>
+          <li><span>Año</span>2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <!--
+      Para usar imágenes reales: dentro de un .gallery__item, agregá
+      <img src="assets/tu-imagen.jpg" alt="..."> y se mostrará sobre el recuadro.
+    -->
+    <section class="gallery-section">
+      <div class="gallery">
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--coral)"
+          data-album='[{"src":"assets/santa-elena-1.jpg","cap":"Crea los mejores recuerdos familiares"},{"src":"assets/santa-elena-2.jpg","cap":"Inicia tu nueva vida en familia"},{"src":"assets/santa-elena-3.jpg","cap":"El lugar perfecto para el primer hogar"},{"src":"assets/santa-elena-4.jpg","cap":"¿Qué es lo que más valoras de un proyecto residencial?"},{"src":"assets/santa-elena-5.jpg","cap":"¿Qué es lo más importante para tu familia?"},{"src":"assets/santa-elena-6.jpg","cap":"¿Cuántas habitaciones necesitas?"}]'
+          aria-label="Abrir galería: Santa Elena (6 imágenes)">
+          <img src="assets/santa-elena-1.jpg" alt="Campaña Santa Elena" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-santa-elena.png" alt="Santa Elena" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">01</span>
+          <span class="gallery__count">▦ 6 fotos</span>
+          <figcaption class="gallery__label">Santa Elena · Campaña</figcaption>
+        </button>
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--blue)"
+          data-album='[{"src":"assets/mirador-1.jpg","cap":"Invierte con visión, vive con estatus"},{"src":"assets/mirador-2.jpg","cap":"Las mejores familias ya eligieron"},{"src":"assets/mirador-3.jpg","cap":"Últimos lotes con disponibilidad inmediata"},{"src":"assets/mirador-4.jpg","cap":"Aparta tu lote con solo $500"},{"src":"assets/mirador-5.jpg","cap":"Oportunidad única — blindar tu futuro es estratégico"},{"src":"assets/mirador-6.jpg","cap":"¿Cuándo es el mejor momento para comprar un lote?"}]'
+          aria-label="Abrir galería: Mirador de los Hidalgos (6 imágenes)">
+          <img src="assets/mirador-1.jpg" alt="Campaña Mirador de los Hidalgos" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-mirador.png" alt="Mirador de los Hidalgos" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">02</span>
+          <span class="gallery__count">▦ 6 fotos</span>
+          <figcaption class="gallery__label">Mirador de los Hidalgos · Campaña</figcaption>
+        </button>
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--yellow)"
+          data-album='[{"src":"assets/bosques-1.jpg","cap":"Un lugar para tu familia"},{"src":"assets/bosques-2.jpg","cap":"Momentos compartidos — la comunidad se convierte en familia"},{"src":"assets/bosques-3.jpg","cap":"Vistas incomparables, el escenario perfecto para tu vida"},{"src":"assets/bosques-4.jpg","cap":"¿Qué es lo más importante para tu familia?"},{"src":"assets/bosques-5.jpg","cap":"Momentos compartidos en comunidad"},{"src":"assets/bosques-6.jpg","cap":"Un hogar para tu familia"},{"src":"assets/bosques-7.jpg","cap":"Aparta tu lote con solo $500"},{"src":"assets/bosques-8.jpg","cap":"Asegura tu terreno en preventa con el 5%"},{"src":"assets/bosques-9.jpg","cap":"Ubicación estratégica — a 1.7 km del Anillo Periférico"},{"src":"assets/bosques-10.jpg","cap":"Vive rodeado de naturaleza"},{"src":"assets/bosques-11.jpg","cap":"Amenidades: canchas, área de juegos y BBQ"}]'
+          aria-label="Abrir galería: Bosques de Alejandría (11 imágenes)">
+          <img src="assets/bosques-1.jpg" alt="Campaña Bosques de Alejandría" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-bosques.png" alt="Bosques de Alejandría" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">03</span>
+          <span class="gallery__count">▦ 11 fotos</span>
+          <figcaption class="gallery__label">Bosques de Alejandría · Campaña</figcaption>
+        </button>
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--blue)"
+          data-album='[{"src":"assets/torres-1.jpg","cap":"Vistas que se viven, no se sueñan"},{"src":"assets/torres-2.jpg","cap":"Espacios pensados para vivir con estatus"},{"src":"assets/torres-3.jpg","cap":"¿Por qué soñarlo, si puedes vivirlo?"}]'
+          aria-label="Abrir galería: Torres Platino (3 imágenes)">
+          <img src="assets/torres-1.jpg" alt="Campaña Torres Platino" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-torres.png" alt="Torres Platino" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">04</span>
+          <span class="gallery__count">▦ 3 fotos</span>
+          <figcaption class="gallery__label">Torres Platino · Campaña</figcaption>
+        </button>
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--blue)"
+          data-album='[{"src":"assets/platino-1.jpg","cap":"Más de 30 años construyendo confianza"},{"src":"assets/platino-2.jpg","cap":"+30 años de trayectoria en Honduras"},{"src":"assets/platino-3.jpg","cap":"Proyectos entregados con respaldo"},{"src":"assets/platino-4.jpg","cap":"Proyectos que transforman SPS, Villanueva y Tegucigalpa"},{"src":"assets/platino-5.jpg","cap":"Invertir con nosotros es invertir con respaldo, no con promesas"}]'
+          aria-label="Abrir galería: Inmobiliaria Platino (5 imágenes)">
+          <img src="assets/platino-1.jpg" alt="Carrusel corporativo Inmobiliaria Platino" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-platino.svg" alt="Inmobiliaria Platino" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">05</span>
+          <span class="gallery__count">▦ 5 fotos</span>
+          <figcaption class="gallery__label">Inmobiliaria Platino · Marca</figcaption>
+        </button>
+        <div id="reels" hidden data-album='[{"src":"assets/reels-bda.mp4","type":"video","cap":"Reel — Bosques de Alejandría"},{"src":"assets/reels-tp.mp4","type":"video","cap":"Reel — Torres Platino"},{"src":"assets/reels-2.mp4","type":"video","cap":"Reel — Inmobiliaria Platino"}]'></div>
+        <div id="animacion" hidden data-album='[{"src":"assets/anim-1.mp4","type":"video","cap":"Animación — Duracreto"},{"src":"assets/anim-2.mp4","type":"video","cap":"Animación — Torres Platino"},{"src":"assets/anim-3.mp4","type":"video","cap":"Animación — Bosques de Alejandría"},{"src":"assets/anim-4.mp4","type":"video","cap":"Animación — Mirador de los Hidalgos"},{"src":"assets/anim-5.mp4","type":"video","cap":"Animación — Santa Elena"}]'></div>
+        <div id="fotografia" hidden data-album='[{"src":"assets/foto-1.jpg","cap":"Retrato — luz y sombra"},{"src":"assets/foto-2.jpg","cap":"Retrato editorial"},{"src":"assets/foto-3.jpg","cap":"Retrato en movimiento"},{"src":"assets/foto-4.jpg","cap":"Retrato low-key"},{"src":"assets/foto-5.jpg","cap":"Headshot corporativo"},{"src":"assets/foto-6.jpg","cap":"Baloncesto — Huskies UNITEC"},{"src":"assets/foto-7.jpg","cap":"Baloncesto — humo y luz"},{"src":"assets/foto-8.jpg","cap":"Baloncesto — estudio"},{"src":"assets/foto-9.jpg","cap":"Retrato — rojo y azul"},{"src":"assets/foto-10.jpg","cap":"Retrato — luz dramática"}]'></div>
+        <button class="gallery__item gallery__item--album reveal" style="--c:var(--yellow)"
+          data-album='[{"src":"assets/duracreto-1.jpg","cap":"¡Duracreto está de fiesta! · Feria Juniana"},{"src":"assets/duracreto-2.jpg","cap":"Tu 14vo rinde más con Duracreto · Bloques certificados"},{"src":"assets/duracreto-3.jpg","cap":"Construí este junio · Grava 3/4, Grava 3/8 y Arena triturada"},{"src":"assets/duracreto-4.jpg","cap":"Cumplí tu sueño, construí tu casa"},{"src":"assets/duracreto-5.jpg","cap":"Últimos días de feria · Precios especiales"}]'
+          aria-label="Abrir galería: Duracreto (5 imágenes)">
+          <img src="assets/duracreto-1.jpg" alt="Campaña Duracreto Feria Juniana" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <img class="gallery__brand" src="assets/logo-duracreto.png" alt="Duracreto" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver galería →</span>
+          <span class="gallery__index">08</span>
+          <span class="gallery__count">▦ 5 fotos</span>
+          <figcaption class="gallery__label">Duracreto · Campaña</figcaption>
+        </button>
+        <figure class="gallery__item reveal" style="--c:var(--blue)">
+          <span class="gallery__index">09</span><span class="gallery__glyph">✶</span><figcaption class="gallery__label">Post · Llamado a la acción</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="page-cta">
+      <div class="page-cta__inner">
+        <h2 class="page-cta__title reveal">¿Querés esto para tu marca?</h2>
+        <p class="page-cta__text reveal">Armemos un sistema de contenido que se note —y que venda.</p>
+        <div class="page-cta__actions reveal">
+          <a href="index.html#contacto" class="btn btn--solid" data-link>Hablemos →</a>
+          <a href="https://wa.me/50499049114" class="btn btn--ghost" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="index.html" class="footer__big">Volver al inicio ↑</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Jarvis Zuniga · Hecho con cuidado.</p>
+      <ul class="footer__social">
+        <li><a href="https://www.linkedin.com/in/jarvis-zuniga" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:jarviszuniga84@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="https://wa.me/50499049114" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Lightbox / visor de galería -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería de imágenes">
+    <button class="lightbox__close" aria-label="Cerrar galería">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Imagen anterior">‹</button>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+      <video class="lightbox__video" controls playsinline hidden></video>
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Imagen siguiente">›</button>
+    <span class="lightbox__counter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
