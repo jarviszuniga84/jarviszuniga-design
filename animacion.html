@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animación — Jarvis Zuniga</title>
+  <meta name="description" content="Animaciones de marca y proyecto: Duracreto, Torres Platino, Bosques, Mirador y Santa Elena." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Space+Mono:wght@400;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="scroll-bar" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="index.html" class="nav__brand" aria-label="Inicio">
+      <span class="nav__mark">JZ</span>
+      <span class="nav__name">Jarvis&nbsp;Zuniga</span>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="index.html#trabajo" data-link>Trabajo</a>
+      <a href="index.html#sobre" data-link>Sobre mí</a>
+      <a href="index.html#servicios" data-link>Servicios</a>
+      <a href="assets/cv-jarvis-zuniga-2026.pdf" class="nav__cv" download aria-label="Descargar currículum (PDF)">Currículum <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg></a>
+      <a href="index.html#contacto" class="nav__cta" data-link>Hablemos</a>
+    </nav>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <a href="index.html#trabajo" data-link>Trabajo</a>
+    <a href="index.html#sobre" data-link>Sobre mí</a>
+    <a href="index.html#servicios" data-link>Servicios</a>
+    <a href="assets/cv-jarvis-zuniga-2026.pdf" class="nav__cv" download>Currículum</a>
+    <a href="index.html#contacto" data-link>Hablemos</a>
+  </div>
+
+  <main>
+    <section class="subhero">
+      <div class="subhero__halftone" aria-hidden="true"></div>
+      <div class="subhero__inner">
+        <a href="index.html#trabajo" class="subhero__back" data-link>← Volver al trabajo</a>
+        <p class="eyebrow"><span class="dot"></span>Proyecto · Animación</p>
+        <h1 class="subhero__title">Motion &<br>Animación</h1>
+        <p class="subhero__lede">
+          Marca en movimiento: spots animados, intros de proyecto y piezas
+          audiovisuales para campañas inmobiliarias y de producto.
+        </p>
+        <ul class="subhero__meta">
+          <li><span>Servicio</span>Motion design</li>
+          <li><span>Formatos</span>Animación 2D · 3D · Spot</li>
+          <li><span>Clientes</span>Duracreto · Torres · Bosques · Mirador · Santa Elena</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="gallery gallery--large">
+
+        <button class="gallery__item gallery__item--album gallery__item--video reveal" style="--c:var(--yellow)"
+          data-album='[{"src":"assets/anim-1.mp4","type":"video","cap":"Animación — Duracreto"}]'
+          aria-label="Ver animación Duracreto">
+          <img src="assets/duracreto-1.jpg" alt="Animación Duracreto" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <span class="gallery__play" aria-hidden="true">▶</span>
+          <img class="gallery__brand" src="assets/logo-duracreto.png" alt="Duracreto" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver animación →</span>
+          <span class="gallery__index">01</span>
+          <span class="gallery__count">▶ Video</span>
+          <figcaption class="gallery__label">Duracreto · Animación</figcaption>
+        </button>
+
+        <button class="gallery__item gallery__item--album gallery__item--video reveal" style="--c:var(--blue)"
+          data-album='[{"src":"assets/anim-2.mp4","type":"video","cap":"Animación — Torres Platino"}]'
+          aria-label="Ver animación Torres Platino">
+          <img src="assets/torres-1.jpg" alt="Animación Torres Platino" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <span class="gallery__play" aria-hidden="true">▶</span>
+          <img class="gallery__brand" src="assets/logo-torres.png" alt="Torres Platino" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver animación →</span>
+          <span class="gallery__index">02</span>
+          <span class="gallery__count">▶ Video</span>
+          <figcaption class="gallery__label">Torres Platino · Animación</figcaption>
+        </button>
+
+        <button class="gallery__item gallery__item--album gallery__item--video reveal" style="--c:var(--coral)"
+          data-album='[{"src":"assets/anim-3.mp4","type":"video","cap":"Animación — Bosques de Alejandría"}]'
+          aria-label="Ver animación Bosques de Alejandría">
+          <img src="assets/bosques-1.jpg" alt="Animación Bosques de Alejandría" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <span class="gallery__play" aria-hidden="true">▶</span>
+          <img class="gallery__brand" src="assets/logo-bosques.png" alt="Bosques de Alejandría" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver animación →</span>
+          <span class="gallery__index">03</span>
+          <span class="gallery__count">▶ Video</span>
+          <figcaption class="gallery__label">Bosques de Alejandría · Animación</figcaption>
+        </button>
+
+        <button class="gallery__item gallery__item--album gallery__item--video reveal" style="--c:var(--blue)"
+          data-album='[{"src":"assets/anim-4.mp4","type":"video","cap":"Animación — Mirador de los Hidalgos"}]'
+          aria-label="Ver animación Mirador de los Hidalgos">
+          <img src="assets/mirador-1.jpg" alt="Animación Mirador de los Hidalgos" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <span class="gallery__play" aria-hidden="true">▶</span>
+          <img class="gallery__brand" src="assets/logo-mirador.png" alt="Mirador de los Hidalgos" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver animación →</span>
+          <span class="gallery__index">04</span>
+          <span class="gallery__count">▶ Video</span>
+          <figcaption class="gallery__label">Mirador de los Hidalgos · Animación</figcaption>
+        </button>
+
+        <button class="gallery__item gallery__item--album gallery__item--video reveal" style="--c:var(--coral)"
+          data-album='[{"src":"assets/anim-5.mp4","type":"video","cap":"Animación — Santa Elena"}]'
+          aria-label="Ver animación Santa Elena">
+          <img src="assets/santa-elena-1.jpg" alt="Animación Santa Elena" loading="lazy" />
+          <span class="gallery__scrim" aria-hidden="true"></span>
+          <span class="gallery__play" aria-hidden="true">▶</span>
+          <img class="gallery__brand" src="assets/logo-santa-elena.png" alt="Santa Elena" onerror="this.style.display='none'" />
+          <span class="gallery__viewcta">Ver animación →</span>
+          <span class="gallery__index">05</span>
+          <span class="gallery__count">▶ Video</span>
+          <figcaption class="gallery__label">Santa Elena · Animación</figcaption>
+        </button>
+
+      </div>
+    </section>
+
+    <section class="page-cta">
+      <div class="page-cta__inner">
+        <h2 class="page-cta__title reveal">¿Tu marca necesita moverse?</h2>
+        <p class="page-cta__text reveal">Del concepto al corte final — animaciones que comunican y venden.</p>
+        <div class="page-cta__actions reveal">
+          <a href="index.html#contacto" class="btn btn--solid" data-link>Hablemos →</a>
+          <a href="https://wa.me/50499049114" class="btn btn--ghost" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="index.html" class="footer__big">Volver al inicio ↑</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Jarvis Zuniga · Hecho con cuidado.</p>
+      <ul class="footer__social">
+        <li><a href="https://www.instagram.com/jarviszuniga/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/jarvis-zuniga" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:jarviszuniga84@gmail.com" aria-label="Email">Email</a></li>
+        <li><a href="https://wa.me/50499049114" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería">
+    <button class="lightbox__close" aria-label="Cerrar">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Anterior">‹</button>
+    <figure class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+      <video class="lightbox__video" controls playsinline hidden></video>
+      <figcaption class="lightbox__cap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Siguiente">›</button>
+    <span class="lightbox__counter"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
